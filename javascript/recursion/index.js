@@ -7,7 +7,7 @@ Stretch Goal:
 */
 
 
-import  { organizationData } from './mock.js'
+import  { data } from './mock.js'
 
 const EMPLOYEE_KEY = "employees";
 
@@ -50,8 +50,8 @@ function searchEmployeeByid(nodes, employeeId) {
 
 
 // search employee with id 5
-const employee1 = searchEmployeeByid(organizationData, 5)
+const employee1 = searchEmployeeByid(data, 5)
 console.log("Employee1", employee1);
 // search employee with id 6
-const employee2 = searchEmployeeByid(organizationData, 6)
+const employee2 = searchEmployeeByid(data, 7);
 console.log("Employee2", employee2);

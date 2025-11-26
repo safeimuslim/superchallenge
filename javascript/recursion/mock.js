@@ -1,43 +1,32 @@
-export const organizationData = {
-  headquarters: {
-    finance: {
-      employees: [
-        { id: 1, name: "Amina Al-Farsi", position: "Accountant" },
-        { id: 2, name: "Hiroshi Tanaka", position: "Financial Analyst" },
-      ],
-      budget: 500000,
+export const data = {
+  company: {
+    name: "Tech Corp",
+    meta: {
+      createdAt: "2024-01-01",
+      tags: ["it", "software"],
     },
-    hr: {
-      employees: [
-        { id: 3, name: "Miguel García", position: "HR Manager" },
-        { id: 4, name: "Priya Patel", position: "Recruiter" },
-      ],
-      policies: ["policy1", "policy2"],
-    },
-  },
-  regional_offices: {
-    office1: {
-      sales: {
+    departments: [
+      {
+        id: 1,
+        name: "Sales",
         employees: [
-          { id: 5, name: "Kwame Mensah", position: "Sales Executive" },
+          { id: 5, name: "Ammar", role: "Sales Executive" },
+          { id: 6, name: "Nina", role: "Sales Lead" },
         ],
-        revenue: 1000000,
       },
-      support: {
-        employees: [
-          { id: 6, name: "Li Wei Chen", position: "Support Specialist" },
+      {
+        id: 2,
+        name: "Engineering",
+        teams: [
+          {
+            teamName: "Frontend",
+            employees: [
+              { id: 7, name: "Safei", role: "Senior Frontend Engineer" },
+              { id: 8, name: "Akira", role: "Frontend Engineer" },
+            ],
+          },
         ],
-        tickets: 300,
       },
-    },
-    office2: {
-      development: {
-        employees: [
-          { id: 7, name: "Emily Smith", position: "Software Engineer" },
-          { id: 8, name: "Hank Grey", position: "Product Manager" },
-        ],
-        projects: ["Project A", "Project B"],
-      },
-    },
+    ],
   },
 };
