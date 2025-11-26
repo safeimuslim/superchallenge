@@ -1,6 +1,8 @@
 /*
-
 Challenge:
+
+3. Range of Integers Using Recursion
+
 Write a JavaScript program to get integers in the range (x, y) using recursion.
 
 Example : range(2, 9)
